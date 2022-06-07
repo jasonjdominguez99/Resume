@@ -1,0 +1,210 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Jason Dominguez} \\ \vspace{1pt}
+    \small 07539570493 $|$ \href{mailto:jasonjdominguez99@gmail.com}{\underline{jasonjdominguez99@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/jasonjdominguez99/}{\underline{linkedin.com/in/jasonjdominguez99}} $|$
+    \href{https://github.com/jasonjdominguez99}{\underline{github.com/jasonjdominguez99}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Manchester}{Manchester, UK}
+      {Cmp Sci. PhD in Generative Deep Learning for Music Composition}{Sep. 2021 -- Mar. 2025}
+    \resumeSubheading
+      {University of Manchester}{Manchester, UK}
+      {1\textsuperscript{st} class MPhys in Physics (82\%)}{Sep. 2017 -- June 2021}
+    \resumeSubheading
+      {Thomas Hardye Sixth Form}{Dorchester, UK}
+      {A levels: Maths (A*), Physics (A*), Music Tech (A), AS Further maths (A)}{Sep. 2015 -- June 2017}
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python (4+ years), C/C++ (4+ years), SQL/MySQL (Beginner), MATLAB (2+ years)} \\
+     \textbf{Deep learning frameworks}{: TensorFlow, Keras, PyTorch} \\
+     \textbf{Libraries}{: Pandas, NumPy, Matplotlib, Scikit-Learn, OpenCV} \\
+    }}
+ \end{itemize}
+ 
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Programming And Machine Learning In My Degree}{Sep. 2017 -- Present}
+      {University of Manchester}{Manchester, UK}
+      \resumeItemListStart
+        \resumeItem{Achieved 91\% in “Machine Learning and Optimization” course from the Electrical and Electronic Engineering department, with coursework on creating neural networks in Python and MATLAB.}
+        \resumeItem{Familiarity with implementing linear regression, logistic regression, SVM, Fisher LDA, PCA, decision trees and naive Bayes models.}
+        \resumeItem{Took “Object-oriented programming in C++” module to enhance my coding skills. My final project included creating a chess game from scratch using advanced C++ features, including polymorphism, smart pointers, move semantics and class inheritance.}
+        \resumeItem{I took a Python and C++ module (80\%) and I use python frequently for data analysis for experiments.}
+        \resumeItem{Achieved a high first in a statistics module, covering topics such as the central limit theorem, Bayesian statistics and Gaussian, Poisson and Binomial distributions.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Deep Learning Specialization}{Jun. 2020 -- Sep. 2020}
+      {deeplearning.ai}{Coursera}
+      \resumeItemListStart
+        \resumeItem{I completed three online deep learning specialization consisting of 15 courses. These courses involved implementing algorithms from current research to different applications, such as image classification and generative deep learning.}
+        \resumeItem{I gained familiarity with Keras and Tensorflow in Python, to create train and test VAEs, GANs and RNNs. }
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Can Machine Learning Identify Liquid Crystal Phases} $|$ \emph{Python, CNNs, YOLO, Keras}}{Sept. 2020 -- Present}
+          \resumeItemListStart
+            \resumeItem{I am applying machine learning algorithms, CNNs and Inception networks, to identify different liquid crystal phases from the structure of their textures.}
+            \resumeItem{I also extended this to apply trained networks to videos to detect liquid crystal phase transitions.}
+            \resumeItem{Additionally gained familiarity with leading object detection algorithm, YOLO, to detect nematic defects textures.}
+            \resumeItem{This is novel in the field of soft matter physics, so we plan to publish two papers on this machine learning application in the coming months.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------Hobbies-----------
+\section{Non-academic interests}
+\resumeSubHeadingListStart
+    \resumeProjectHeading
+          {\textbf{Music} $|$ \emph{Drums, Guitar, Vocals, original compositions}}{}
+          \resumeItemListStart
+            \resumeItem{I am a musician, with 10 years experience playing drums and 5+ years experience playing guitar, bass, Canarian timple and singing.}
+            \resumeItem{I achieved a distinction in grade 5 drumming and a merit in grade 2 singing.}
+            \resumeItem{In my spare time I compose original music both by myself and as part of my band, a newly formed Indie rock band based in Manchester.}
+            \resumeItem{I have contributed to original songs which have been semi-professionally recorded. Currently, original songs which I contributed to when I was 16 years old are available on Spotify - Band: The Salt, EP: Not the plan.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-------------------------------------------
+%
+\end{document}
