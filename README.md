@@ -1,2 +1,2 @@
-# cv
-My latest cv
+# Resume
+My latest resume/CV
