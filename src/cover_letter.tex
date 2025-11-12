@@ -1,0 +1,135 @@
+%-------------------------
+% Cover Letter in Latex
+% Based on resume template
+% Author : Jason Dominguez
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{ifthen}
+\input{glyphtounicode}
+
+%----------CUSTOMIZABLE VARIABLES----------
+\newcommand{\position}{Software Engineer}
+\newcommand{\company}{Bending Spoons}
+\newcommand{\showcompanysection}{true}  % Set to "true" to hide company section
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\coverSection}[1]{
+  \section{#1}
+  \vspace{-10pt}
+}
+
+%-------------------------------------------
+%%%%%%  COVER LETTER STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Jason Dominguez} \\ \vspace{1pt}
+    \small 07539570493 $|$ \href{mailto:jasonjdominguez99@gmail.com}{\underline{jasonjdominguez99@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/jasonjdominguez99/}{\underline{LinkedIn}} $|$
+    \href{https://github.com/jasonjdominguez99}{\underline{GitHub}}
+\end{center}
+
+\vspace{10pt}
+
+% Date and recipient info
+\begin{flushleft}
+\today
+\end{flushleft}
+
+\vspace{10pt}
+
+Dear Hiring Manager,
+
+\vspace{5pt}
+
+I'm writing to apply for the \position{} position.
+
+\section{About Me}
+
+% Technology has been my passion since childhood—from tinkering with electronics to pursuing advanced studies in physics and machine learning at the University of Manchester. %
+Over the past three years as a professional software developer, I've discovered my love for building systems that directly impact users' daily experiences. At Vochlea Music, I've led the development of an audio analysis app from prototype to production, providing the highest code output on our team while managing project direction and coordinating releases with our CEO and CTO.
+
+\vspace{5pt}
+
+What drives me most is tackling challenging technical problems through innovative solutions—whether that's optimizing critical performance bottlenecks or developing novel algorithms for complex computational tasks.
+
+% \ifthenelse{\equal{\showcompanysection}{true}}{
+% \section{Why \company{}?}
+
+% \company{} Play represents the perfect intersection of my interests: developer empowerment and consumer experience at unprecedented scale. The platform doesn't just distribute content—it shapes how millions of developers reach users and how billions of people discover new experiences. I'm particularly drawn to the Android ecosystem's openness and \company{}'s commitment to making technology universally accessible.
+
+% \company{}'s engineering culture of tackling impossible problems resonates with my academic background in machine learning and my practical experience optimising systems for scale. The opportunity to work on infrastructure that handles information at massive scale while collaborating with world-class engineers is exactly the challenge I'm seeking.
+% }{}
+
+\ifthenelse{\equal{\showcompanysection}{true}}{
+\section{Why \company{}?}
+
+\company{}'s unique strategy of acquiring digital businesses and transforming them through platform leverage creates fascinating engineering challenges across diverse tech stacks. The emphasis on turning "complexity into simplicity" through first-principles thinking perfectly aligns with my problem-solving approach.
+
+\vspace{5pt}
+
+What particularly excites me is the combination of significant autonomy—owning projects from ideation to execution—with the accelerated growth opportunities where engineers can lead major products early in their careers. This investor-operator hybrid model offers exactly the kind of high-impact, varied work environment I'm seeking.
+}{}
+
+\section{Why Me?}
+
+I bring a unique combination of theoretical depth and practical impact:
+
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=0pt]
+    \item \textbf{Strong academic foundation:} First-class MPhys in Physics from the University of Manchester, a Russell Group institution, providing solid analytical and problem-solving skills
+    \item \textbf{Modern C++ expertise:} 7+ years of experience with performance-critical C++ development, including concurrency, templating and memory optimization, up to C++23
+    \item \textbf{Research-driven approach:} Award-winning machine learning research demonstrates my ability to innovate and solve novel problems
+    \item \textbf{Collaborative leadership:} Led feature development in small teams while maintaining code quality and delivery timelines
+\end{itemize}
+
+% My combination of academic rigour, industry experience, and genuine passion for building great developer tools makes me well-suited for the role of \position.
+
+\vspace{10pt}
+
+Thank you for your consideration.
+
+\vspace{10pt}
+
+Sincerely,
+
+\vspace{15pt}
+
+Jason Dominguez
+
+\end{document}

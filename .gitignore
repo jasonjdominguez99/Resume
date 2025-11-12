@@ -1,0 +1,16 @@
+# Build directory (contains all generated PDFs and LaTeX artifacts)
+build/
+
+# LaTeX build artifacts (in case they're generated outside build/)
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+
+# macOS
+.DS_Store
+
+# Claude Code
+CLAUDE.md
