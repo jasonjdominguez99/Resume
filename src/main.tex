@@ -131,7 +131,7 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: C/C++ (7+ years), QML, Javascript, Python} \\
+     \textbf{Languages}{: C/C++ (7+ years), QML, Python, Rust} \\
      \textbf{Softwares \& Frameworks}{: CMake, Qt, Git/GitHub, Qt Creator, VS Code} }}
  \end{itemize}
  
@@ -145,27 +145,30 @@
 
       \vspace{10pt}
       \textbf{Company \& Product Overview:}\\
-      Vochlea is an innovative ML-centric music tech startup developing dubnote, an iOS audio analysis app. As part of a 3-person development team, I work with a QML/Qt/C++ tech stack with Objective-C++ for iOS API bridging, advancing the app from prototype to production-ready status.\\
+      Vochlea is an innovative ML-centric music tech startup developing dubnote, an iOS audio analysis app. Working directly with the CTO, I use a QML/Qt/C++ tech stack with Objective-C++ for iOS APIs. I have developed the app from prototype to release, recently architecting a distributed cloud collaboration system
+  enabling real-time multi-user sync.\\
 
       \vspace{5pt}
-      \textbf{Core C++ Development \& Performance Engineering:}\\
-      Specializing in performance-critical backend systems, I deliver $\sim$60\% of team throughput focusing on low-level optimizations, memory management, and concurrent programming. My work centers on the core C++ engine that powers real-time audio processing and ML inference pipelines.\\
+      \textbf{My Role:}\\
+      I specialize in performance-critical backend systems, focusing on low-level optimizations, memory management, and concurrent programming. I design and architect solutions, integrating the C++ backend with the app UI. My work centers on developing the core C++ engine that powers real-time (sub-ms) audio processing and ML inference pipelines.\\
 
       \vspace{5pt}
       \textbf{Key Technical Achievements:}\\
-- \textbf{Memory Optimization:} Eliminated 200MB memory leaks by implementing RAII principles and smart pointer patterns in performance-critical C++ code\\
+- \textbf{Distributed Systems:} Architected cloud collaboration system using CRDTs with Hybrid Logical Clocks and operation dependencies for out-of-order operation handling, WebSocket real-time sync, and REST APIs for file upload/download\\
+- \textbf{Real-time:} Implemented lock-free queue solution for low-latency audio processing pipelines with deterministic performance characteristics for ML model inference\\
 - \textbf{Concurrency Engineering:} Resolved critical data races by implementing proper data isolation between threads, using copy and move semantics to eliminate shared memory access\\
 - \textbf{Performance Tuning:} Identified and resolved 2-second UI freezes through performance profiling, moving blocking file I/O to background threads with asynchronous callbacks\\
-- \textbf{Real-time Systems:} Implemented lock-free queue solution for low-latency audio processing pipelines with deterministic performance characteristics for ML model inference
+- \textbf{Memory Optimization:} Eliminated 200MB memory leaks by implementing RAII principles and smart pointer patterns in performance-critical C++ code\\
 
       \vspace{5pt}
       \textbf{Technical Summary:}
       \resumeItemListStart
         \resumeItem{Implemented high-performance \textbf{C++} backend systems for real-time audio processing}
         \resumeItem{Optimized memory usage and eliminated race conditions in concurrent, performance-critical code}
-        \resumeItem{Applied advanced \textbf{C++} techniques including RAII, move semantics, and async programming}
+        \resumeItem{Applied performance-critical \textbf{C++} techniques including lock-free data structures, asynchronous I/O, and zero-allocation patterns}
         \resumeItem{Developed unit testing suite using \textbf{QTest} framework}
         \resumeItem{Profiled and optimized system performance using native tooling on \textbf{macOS/Unix} platforms}
+        \resumeItem{Architected distributed cloud collaboration system using CRDTs for conflict-free real-time multi-user synchronization}
       \resumeItemListEnd
 
 
@@ -205,28 +208,28 @@
 \section{Projects}
     \resumeSubHeadingListStart
         \resumeProjectHeading
-          {\textbf{Options Pricing} $|$ \emph{C++, Options Pricing, BSM, Binomial}}{2024 - Current}
-          \resumeItemListStart
-            \resumeItem{Currently working on implementing pricing methods for different financial options, furthering my understanding of financial derivatives pricing. Available \href{https://github.com/jasonjdominguez99/OptPriEngine}{\underline{HERE}}}
-
-            \resumeItem{Understanding of American, European \& exotic put/call options}
-            \resumeItem{Understood \& implemented BSM and Binomial models for pricing}
-          \resumeItemListEnd
-          
-        \resumeProjectHeading
           {\textbf{Award-Winning Publication in ML for Liquid Crystals} $|$ \emph{Python, TensorFlow}}{2020 - 2023}
           \resumeItemListStart
             \resumeItem{Applied ML computer vision to identify different liquid crystal phases from their textures}
             \resumeItem{Published three co-authored papers in top-tier soft matter physics journals. Available \href{https://doi.org/10.1080/02678292.2022.2150790}{\underline{HERE}}}
             \resumeItem{One of these publications was the winner of \href{https://doi.org/10.1080/02678292.2024.2436727}{\underline{The 2023 Luckhurst-Samulski Prize}}}
           \resumeItemListEnd
+
+        \resumeProjectHeading
+          {\textbf{Options Pricing} $|$ \emph{C++, Options Pricing, BSM, Binomial}}{2024 - Current}
+          \resumeItemListStart
+            \resumeItem{Currently working on implementing pricing methods for different financial options, furthering my understanding of financial derivatives pricing. Available \href{https://github.com/jasonjdominguez99/OptPriEngine}{\underline{HERE}}}
+            \resumeItem{Understanding of American, European \& exotic put/call options}
+            \resumeItem{Understood \& implemented BSM and Binomial models for pricing}
+          \resumeItemListEnd
           
-        % \resumeProjectHeading
-        %   {\textbf{Object-Oriented C++ Chess Game} $|$ \emph{C++, OOP, Git, GitHub}}{2021}
-        %   \resumeItemListStart
-        %     \resumeItem{Created a chess game, code available \href{https://github.com/jasonjdominguez99/object-oriented-chess-game}{\underline{HERE}}}
-        %     \resumeItem{Used advanced C++ features, such as inheritance, polymorphism, smart pointers, and exceptions}
-        %   \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{FastFix - Zero-Copy FIX Parser} $|$ \emph{Rust, FIX Protocol, Systems Programming}}{2025 - Current}
+          \resumeItemListStart
+            \resumeItem{Developing a zero-allocation FIX protocol parser in Rust to understand low-latency systems design principles used in electronic trading. Available \href{https://github.com/jasonjdominguez99/fastfix}{\underline{HERE}}}
+            \resumeItem{Focusing on zero-copy parsing techniques to minimize memory allocations in performance-critical paths to improve upon an existing Rust FIX parser}
+            \resumeItem{Learning FIX protocol fundamentals including message structure, field encoding, and validation}
+          \resumeItemListEnd
           
     \resumeSubHeadingListEnd
 
